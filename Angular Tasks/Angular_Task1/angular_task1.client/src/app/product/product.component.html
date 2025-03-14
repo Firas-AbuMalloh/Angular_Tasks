@@ -4,12 +4,14 @@
   <div class="row">
 
     <!-- Card 1 -->
-    <div class="col-md-4">
+    <div class="col-md-4" *ngFor="let item of productsData">
       <div class="card text-center">
         <div class="card-body">
-          <h5 class="card-title">Category 1</h5>
-          <p class="card-text">Description of Category 1.</p>
-          <a routerLink="/catagory" class="btn btn-primary">Back</a>
+          <p class="card-text"><img src="{{item.avatar}}" /></p>
+
+          <h5 class="card-title">{{item.name}}</h5>
+          <p>Category ID : {{item.categoryId}}</p>
+          <a routerLink="/ViewDitails/{{item.id}}" class="btn btn-primary">View Ditails</a>
         </div>
       </div>
     </div>

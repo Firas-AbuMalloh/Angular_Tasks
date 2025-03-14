@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { CatagoryComponent } from './catagory/catagory.component';
 import { ProductComponent } from './product/product.component';
+import { DitailsComponent } from './ditails/ditails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     CatagoryComponent,
-    ProductComponent
+    ProductComponent,
+    DitailsComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
