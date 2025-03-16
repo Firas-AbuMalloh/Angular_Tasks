@@ -9,17 +9,19 @@ import { CatagoryComponent } from './catagory/catagory.component';
 import { ProductComponent } from './product/product.component';
 import { DitailsComponent } from './ditails/ditails.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     CatagoryComponent,
     ProductComponent,
-    DitailsComponent
+    DitailsComponent,
   ],
   imports: [
     BrowserModule, HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

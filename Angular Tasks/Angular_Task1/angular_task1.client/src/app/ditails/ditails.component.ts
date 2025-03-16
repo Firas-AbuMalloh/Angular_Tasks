@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ditails',
-  standalone: false,
+  standalone: false,  
   templateUrl: './ditails.component.html',
   styleUrl: './ditails.component.css'
 })
