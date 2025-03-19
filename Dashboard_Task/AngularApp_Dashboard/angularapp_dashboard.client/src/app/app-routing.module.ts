@@ -6,6 +6,8 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { EditCategory2Component } from './edit-category-2/edit-category-2.component';
 
 const routes: Routes = [
   { path: "", pathMatch: "full", component: SignupComponent },
@@ -19,7 +21,8 @@ const routes: Routes = [
       { path: "product", component: ProductComponent },
       { path: "AddCategory", component: AddCategoryComponent },
       { path: "AddProduct", component: AddProductComponent },
-
+      { path: "Edit-Category/:id", component: EditCategory2Component },
+      { path: "EditProduct/:id", component: EditProductComponent },
 
       { path: "", pathMatch: "full", component: CategoryComponent }
     ]

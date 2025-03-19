@@ -28,4 +28,13 @@ export class ServiceService {
   addProduct(product: any) {
     return this.http.post("https://67cd64b6dd7651e464ee3d63.mockapi.io/products", product);
   }
+
+  getCategoryById(id: string): Observable<any> {
+    return this.http.get(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`);
+  }
+
+  updateCategory(id: string, category: any): Observable<any> {
+    return this.http.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`, category);
+  }
+
 }

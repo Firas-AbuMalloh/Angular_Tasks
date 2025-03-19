@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServiceService } from '../service/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-category',
@@ -10,7 +11,7 @@ import { ServiceService } from '../service/service.service';
 export class CategoryComponent {
 
 
-  constructor(private _ser: ServiceService) { }
+  constructor(private _ser: ServiceService, private router: Router) { }
 
   ngOnInit() {
 
@@ -26,5 +27,11 @@ export class CategoryComponent {
       this.category = data;
 
     });
+  }
+  
+  editCategory(id: string) {
+    debugger
+    alert(`the id is : ${id} ` )
+    this.router.navigate([`/home/Edit-Category/${id}`]);
   }
 }

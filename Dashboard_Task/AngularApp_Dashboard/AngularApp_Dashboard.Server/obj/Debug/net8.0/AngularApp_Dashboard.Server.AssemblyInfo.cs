@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngularApp_Dashboard.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8c4cbb0fc7503474d1caf84fbd0eb346c7fce42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d47fe647c00364ebb6cab4b8e82bb537c821a98e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngularApp_Dashboard.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngularApp_Dashboard.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
