@@ -36,5 +36,10 @@ export class ServiceService {
   updateCategory(id: string, category: any): Observable<any> {
     return this.http.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/categories/${id}`, category);
   }
-
+  updateProductser(id: string, product:any) {
+    return this.http.put(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`, product);
+  }
+  getProductById(id: string) {
+    return this.http.get(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`);
+  }
 }

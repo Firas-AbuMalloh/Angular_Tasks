@@ -22,11 +22,11 @@ export class EditCategory2Component {
   cat: any
 
 
-  constructor(private _ser: ServiceService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private _ser: ServiceService, private _active: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
 
-    this.id = this.route.snapshot.paramMap.get('id');
+    this.id = this._active.snapshot.paramMap.get('id');
 
 
     this._ser.getCategoryById(this.id).subscribe((data: any) => {

@@ -23,7 +23,6 @@ const routes: Routes = [
       { path: "AddProduct", component: AddProductComponent },
       { path: "Edit-Category/:id", component: EditCategory2Component },
       { path: "EditProduct/:id", component: EditProductComponent },
-
       { path: "", pathMatch: "full", component: CategoryComponent }
     ]
   },
