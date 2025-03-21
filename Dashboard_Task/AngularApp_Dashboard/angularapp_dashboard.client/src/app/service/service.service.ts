@@ -42,4 +42,7 @@ export class ServiceService {
   getProductById(id: string) {
     return this.http.get(`https://67cd64b6dd7651e464ee3d63.mockapi.io/products/${id}`);
   }
+  updateUser(id:string, userData: any) {
+    return this.http.put(`https://67d9ae8e35c87309f529c67f.mockapi.io/sign/user/${id}`,userData);
+  }
 }

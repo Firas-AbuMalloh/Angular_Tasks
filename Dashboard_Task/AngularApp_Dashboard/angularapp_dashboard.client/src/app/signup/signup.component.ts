@@ -33,6 +33,15 @@ export class SignupComponent {
        this.userChecked = d.find((u: any) => u.email == user.email && u.password == user.password);
 
        if (this.userChecked) {
+
+         localStorage.setItem('userLoggedInId', this.userChecked.id);
+
+         localStorage.setItem('userLoggedInName', this.userChecked.name);
+         localStorage.setItem('userLoggedInEmail', this.userChecked.email);
+
+         localStorage.setItem('userLoggedInPassword', this.userChecked.password);
+
+
          alert("Loged in successful");
          this.router.navigate(["/home"]);
 

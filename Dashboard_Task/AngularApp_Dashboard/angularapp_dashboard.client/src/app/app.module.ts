@@ -13,6 +13,8 @@ import { AddCategoryComponent } from './add-category/add-category.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { EditCategory2Component } from './edit-category-2/edit-category-2.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditProfilComponent } from './edit-profil/edit-profil.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EditCategory2Component } from './edit-category-2/edit-category-2.compon
     AddCategoryComponent,
     AddProductComponent,
     EditProductComponent,
-    EditCategory2Component
+    EditCategory2Component,
+    ProfileComponent,
+    EditProfilComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
